@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Continuous scrolling - fullPage.js</title>
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="examples.css" />
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+</head>
+<body>
+
+<ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">第一页</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">第二页</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">第三页</a></li>
+</ul>
+
+
+<select id="demosMenu">
+  <option selected>Choose Demo</option>
+  <option id="jquery-adapter">jQuery adapter</option>
+  <option id="active-slide">Active section and slide</option>
+  <option id="auto-height">Auto height</option>
+  <option id="autoplay-video-and-audio">Autoplay Video and Audio</option>
+  <option id="backgrounds">Background images</option>
+  <option id="backgrounds-fixed">Fixed fullscreen backgrounds</option>
+  <option id="background-video">Background video</option>
+  <option id="callbacks-v2-compatible">Callbacks version 2</option>
+  <option id="callbacks-v3">Callbacks version 3</option>
+  <option id="continuous-horizontal">Continuous horizontal</option>
+  <option id="continuous-vertical">Continuous vertical</option>
+  <option id="parallax">Parallax</option>
+  <option id="css3">CSS3</option>
+  <option id="drag-and-move">Drag And Move</option>
+  <option id="easing">Easing</option>
+  <option id="fading-effect">Fading Effect</option>
+  <option id="fixed-headers">Fixed headers</option>
+  <option id="gradient-backgrounds">Gradient backgrounds</option>
+  <option id="interlocked-slides">Interlocked Slides</option>
+  <option id="looping">Looping</option>
+  <option id="methods">Methods</option>
+  <option id="navigation-vertical">Vertical navigation dots</option>
+  <option id="navigation-horizontal">Horizontal navigation dots</option>
+  <option id="no-anchor">No anchor links</option>
+  <option id="normal-scroll">Normal scrolling</option>
+  <option id="normalScrollElements">Normal scroll elements</option>
+  <option id="offset-sections">Offset sections</option>
+  <option id="one-section">One single section</option>
+  <option id="reset-sliders">Reset sliders</option>
+  <option id="responsive-auto-height">Responsive Auto Height</option>
+  <option id="responsive-height">Responsive Height</option>
+  <option id="responsive-width">Responsive Width</option>
+  <option id="responsive-slides">Responsive Slides</option>
+  <option id="scrollBar">Scroll bar enabled</option>
+  <option id="scroll-horizontally">Scroll horizontally</option>
+  <option id="scrollOverflow">Scroll inside sections and slides</option>
+  <option id="scrollOverflow-reset">ScrollOverflow Reset</option>
+  <option id="lazy-load">Lazy load</option>
+  <option id="scrolling-speed">Scrolling speed</option>
+  <option id="trigger-animations">Trigger animations</option>
+  <option id="vue-fullpage">Vue-fullpage component</option>
+</select>
+
+<div id="fullpage">
+    <div class="section " id="section0">
+        <div class="biaoti">济阳县圣玺乡村旅游发展有限公司</div>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;本公司位于济阳县仁风镇杨家村村西700米处，南临黄河大堤200米。周围无噪音、无灰尘污染，环境静谧，是一家集住宿餐饮、休闲采摘、垂钓娱乐为一体的综合服务场所。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;我公司建有设施齐全的民宿、高标准生态餐厅、鲜食葡萄采摘园、休闲垂钓中心。其中生态餐厅总投资180余万元，总面积7.9亩，外植垂柳、法桐、紫花槐；内植四季常绿花木，走进餐厅附近仿佛走进了丛林之中。葡萄采摘园占地83亩，引进种植的无核富硒红宝石葡萄品种，口感好，营养丰富，是馈赠亲友的佳品。游客可到葡萄园亲自采摘，体味劳动的快乐。休闲垂钓中心水面60余亩，多年来自然繁殖的黄河鲤鱼、鲫鱼、草鱼、小白鲢，吸引了众多的垂钓爱好者。游客也可以自钓自食，餐厅随时为游客提供烹饪服务。</p>
+    </div>
+    <div class="section active" id="section1">
+        <div class="slide" id="slide1">
+            <div class="intro">
+                <img src="img/full1.jpg" width="50%" height="50%" alt="">
+            </div>
+        </div>
+        <div class="slide active" id="slide2">
+            <div class="intro">
+                <img src="img/full2.jpg" width="50%" height="50%" alt="">
+            </div>
+        </div>
+        <div class="slide " id="slide3">
+            <p>&nbsp; &nbsp;&nbsp; &nbsp; 圣玺乡村旅游发展有限公司引进健康饮食，注重农家风味，营造民宿田园风光，让游客体验回归大自然的感觉。全体员工将为你提供优质的服务，让您尽享农家的朴实之美。</p>
+        </div>
+
+    </div>
+    <div class="section" id="section2">
+        <div class="intro">
+            <p>&nbsp; &nbsp;&nbsp; &nbsp;我公司建有设施齐全的民宿、高标准生态餐厅、鲜食葡萄采摘园、休闲垂钓中心。其中生态餐厅总投资180余万元，总面积7.9亩，外植垂柳、法桐、紫花槐；内植四季常绿花木，走进餐厅附近仿佛走进了丛林之中。葡萄采摘园占地83亩，引进种植的无核富硒红宝石葡萄品种，口感好，营养丰富，是馈赠亲友的佳品。游客可到葡萄园亲自采摘，体味劳动的快乐。休闲垂钓中心水面60余亩，多年来自然繁殖的黄河鲤鱼、鲫鱼、草鱼、小白鲢，吸引了众多的垂钓爱好者。游客也可以自钓自食，餐厅随时为游客提供烹饪服务。</p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="fullpage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        menu: '#menu',
+        lazyLoad: true
+    });
+</script>
+
+</body>
+</html>
